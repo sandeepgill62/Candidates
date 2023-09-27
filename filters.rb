@@ -1,7 +1,10 @@
 # In this file we define the methods to help filter out candidates
 # This way, we keep these methods separated from other potential parts of the program
 
-require 'date'
+def ordered_by_qualifications(candidates)
+  pp candidates.sort_by{ |c| [c[:years_of_experience], c[:github_points]] }
+end
+
 
 def find(id)
   @candidates.each do |candidate|
