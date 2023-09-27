@@ -8,11 +8,13 @@ require './filters'
 
 
 for candidate in @candidates do
-  result = experienced(candidate)
+  result = experienced?(candidate)
   pp result
 end
 
 find_candidate = find(5)
 pp find_candidate
+
+qualified_candidates(@candidates)
 
 # pp @candidates
