@@ -6,7 +6,6 @@ require './filters'
 
 ## Your test code can go here
 
-
 puts "--------------------------"
 for candidate in @candidates do
   result = experienced?(candidate)
