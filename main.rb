@@ -6,14 +6,13 @@ require './filters'
 
 ## Your test code can go here
 
-# def experienced()
-#   result_from_block = yield
-#   return result_from_block
-# end
 
 for candidate in @candidates do
   result = experienced(candidate)
   pp result
 end
+
+find_candidate = find(5)
+pp find_candidate
 
 # pp @candidates

@@ -2,7 +2,13 @@
 # This way, we keep these methods separated from other potential parts of the program
 
 def find(id)
-  # Your code Here
+  @candidates.each do |candidate|
+    if candidate[:id] == id
+      return candidate
+    else
+      return nil
+    end
+  end
 end
 
 def experienced(candidate)
